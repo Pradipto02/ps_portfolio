@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body{
+            background-image: url(./image/louis-maniquet-Ae64KHAzt1I-unsplash.jpg);
+            background-position: center center;
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+           background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        .flex-container{
+            display: flex;
+            height: 100vh;
+            justify-content: space-around;
+        }
+        .name{
+            margin-top: 40px;
+        }
+        .text{
+            align-self: center;
+            margin-left: 10px;
+            border: solid rgb(125, 124, 124);
+            padding: 10px;
+            color: aliceblue;
+            margin-top: 50px;
+        }
+        span{
+           font-weight: bold;
+           font-size: xx-large; 
+        }
+        .contact{
+          margin-top: 40px;
+          margin-left: 50px;
+        }
+       .contact button{
+        margin-right: 20px;
+        margin-bottom: 10px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+       }
+       h2{
+        margin-top: 40px;
+        text-align: center;
+       }
+      .deco{
+        background-color: rgb(114, 111, 106);
+        height: 20px;
+        margin-top: 60px;
+      }
+      h1{
+        margin-bottom: 20px;
+      }
+      p{
+        font-weight: 400;
+        font-size: large;
+        font-weight: bolder;
+      }
+      @media (max-width:400px) {
+        .contact{
+          order: -1;
+          margin-left: 7px;
+        }
+        .contact button{
+          margin-right: 4px;
+        }
+        .text{
+          margin-right: 10px;
+        }
+        .flex-container{
+          flex-direction: column;
+          justify-content: center;
+        }
+    </style>  
+</head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./project.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="flex-container">
+        <div class="text">
+          <h1>Hello,Welcome,my name is Pradipto Shivam</h1>
+          <p><span>I am a student</span> pursuing a Bachelor's Degree in Electronics and Communication Engineering (ECE) </p>
+            <p><span>Domain of interest</span> include Website Designing and Machine Learning<br><span>Hobbies</span> include playing sports,listening to music and watching movies</p><br>
+
+            <h2>"Learn  Practice  &  Grow"</h2>
+            <div class="deco"></div>
+        </div>
+        <div class="contact">
+          <button type="button" class="btn btn-outline-light" href="mailto:pradiptoshivam@gmail.com">Gmail</button>
+          <button type="button" class="btn btn-outline-light" href="#">Linked In</button>
+          <button type="button" class="btn btn-outline-light" href="#">Facebook</button>
+          <button type="button" class="btn btn-outline-light" href="#">Github</button>
+        </div> 
+        </div>
+  </body>
+</html>
