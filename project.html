@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projects</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Raleway">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body{
-           background-image: url(./image/new.jpg);
+           background-image: url(./image/office-932926_1280.jpg);
            background-position: center center;
            background-repeat: no-repeat;
            background-attachment: fixed;
-           background-size: cover;
+           background-size: cover;  
         }
        img{
         margin-top: 45px;
@@ -29,6 +33,7 @@
        }
        .image{
         height: 2rem;
+        border-radius: 5px;
        }
        .certi{
         margin-left: 20px;
@@ -44,34 +49,169 @@
        .first *{
         color: rgb(243, 242, 242);
         font-weight:500;
-       }
+       }     .form-inline {
+	display: inline-block;
+}
+.navbar-header.col {
+	padding: 0 !important;
+}	
+.navbar {		
+	background: transparent;
+	padding-left: 16px;
+	padding-right: 16px;
+	box-shadow: 0 0 4px rgba(160, 151, 151, 0.1);
+}
+.nav-link {
+	margin: 0 5px;
+}
+.nav-link img {
+	border-radius: 50%;
+	width: 36px;
+	height: 36px;
+	margin: -8px 0;
+	float: left;
+	margin-right: 10px;
+}
+.navbar-nav .nav-link{
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: solid white;
+}
+.navbar .navbar-brand {
+	color:white;
+	padding-left: 0;
+	font-size: 25px;
+	padding-right: 50px;
+	font-family: 'Raleway', sans-serif;
+}
+.navbar .navbar-brand b {
+	font-weight: bold;
+	color: white;
+}
+.navbar .navbar-nav a:hover, .navbar .navbar-nav a:focus {
+	color: rgb(251, 250, 249) !important;
+}
+.navbar .navbar-nav a.active, .navbar .navbar-nav a.active:hover {
+	color: rgb(189, 165, 165) !important;
+}
+.search-box {
+	position: relative;
+}	
+.search-box input.form-control {		
+	padding-right: 35px;
+	border-radius: 0;
+	padding-left: 0;
+	border-width: 0 0 1px 0;
+	box-shadow: none;
+}
+.search-box input.form-control:focus {		
+	border-color: #f08373;		
+}
+.search-box .input-group-text {
+	min-width: 35px;
+	border: none;
+	background: transparent;
+	position: absolute;
+	right: 0;
+	z-index: 9;
+	padding: 7px 0 7px 7px;
+	height: 100%;
+}
+.search-box i {
+	color: #a0a5b1;
+	font-size: 19px;
+}
+.navbar .nav-item i {
+	font-size: 30px;
+}
+.navbar .dropdown-item i {
+	font-size: 16px;
+	min-width: 22px;
+}
+.navbar .nav-item.show > a {
+	background: none !important;
+}
+.navbar .dropdown-menu {
+	border-radius: 1px;
+	border-color: #e5e5e5;
+	box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+.navbar .dropdown-menu a {
+	color: #777;
+	padding: 8px 20px;
+	line-height: normal;
+	font-size: 15px;
+}
+.navbar .navbar-form {
+	margin-right: 0;
+	margin-left: 0;
+	border: 0;
+}
+@media (min-width: 992px){
+	.form-inline .input-group {
+		width: 250px;
+		margin-right: 30px;
+	}
+}
+@media (max-width: 991px){
+	.form-inline {
+		display: block;
+		margin-bottom: 10px;
+		margin-top: 0;
+	}
+	.input-group {
+		width: 100%;
+	}
+}
+
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Menu</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"><b>PROJECTS</b></a>  		 
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Collection of nav links, forms, and other content for toggling -->
+      <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+        <div class="navbar-nav">
+          <a href="./index.html"   class="nav-item nav-link" >Home</a>
+          <!-- <a href="./project.html" class="nav-item nav-link" >Projects</a> -->
+          <a href="./file_resume/NIT_Silchar_Resume (1).pdf" class="nav-item nav-link" target="_blank">Resume</a>			
+           <div class="nav-item dropdown">
+            <!-- <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Services</a> --> 
+             <div class="dropdown-menu">					
+              <!-- <a href="#" class="dropdown-item">Web Design</a>
+              <a href="#" class="dropdown-item">Web Development</a>
+              <a href="#" class="dropdown-item">Graphic Design</a>
+              <a href="#" class="dropdown-item">Digital Marketing</a> -->
+                    </div>
+               </div>
+          <!-- <a href="#" class="nav-item nav-link">Portfolio</a>
+          <a href="#" class="nav-item nav-link active">Blog</a>
+          <a href="#" class="nav-item nav-link">Contact</a> -->
+            </div> 
+        <div class="navbar-nav ml-auto">
+          <div class="navbar-form-wrapper">
+              <!-- <div class="input-group search-box">								
+                <div class="input-group-append">
+                  <span class="input-group-text">
+                    <i class="material-icons">&#xE8B6;</i>
+                  </span>
+                </div>
+              </div>
+                    </form> -->
+                </div>
+          <!-- <a href="#" class="nav-item nav-link"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="nav-item nav-link"><i class="fa fa-github"></i></a>
+          <a href="#" class="nav-item nav-link"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="nav-item nav-link"><i class="fa fa-google"></i></a> -->
+            </div>		
+      </div>
+    </nav>
      <div class="container">
         <div class="first" >
-            <div class=image><img src="./image/Automated-Machine-Learning.png"></div>
+            <div class=image><img src="./image/3d-robot-hand-background-ai-technology-side-view.jpg" ></div>
             <h1>Machine Learning Projects</h1>
             <h4>(1) Diabetes Prediction using ML   (May 2023-July 2023)</h4>
             <ul>
@@ -85,12 +225,14 @@
                 <li>Achieved an accuracy range of 47.35-97.9%</li>
                 <li>Technologies and Tools used-Lightbgm learn,pandas,numpy,matplotlib.pyplot,seaborn</li>
             </ul>
-            <a href="#" class="certi">@ Link for Project Completion Certificate</a>
         </div>
         <div class="second">
 
         </div>
      </div>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>
