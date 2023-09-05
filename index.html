@@ -1,259 +1,345 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Raleway">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   <style>
-        body{
-            margin: 0;
-            padding: 0;
-            background-image: url(./image/louis-maniquet-Ae64KHAzt1I-unsplash.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-        .flex-container{
-            display: flex;
-            height: 100vh;
-            justify-content: space-around;
-        }
-        .name{
-            margin-top: 40px;
-        }
-        .text{
-            align-self: center;
-            margin-left: 10px;
-            padding: 40px;
-            color: aliceblue;
-            margin-top: 50px;
-            display: flex;
-            flex-direction: column;
-        }
-        span{
-           font-weight: bold;
-           font-size: xx-large; 
-        }
-       h2{
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .first{
+        background-image: url(./image/louis-maniquet-Ae64KHAzt1I-unsplash.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover; 
+      }
+      .flex-container {
+        display: flex;
+        height: 100vh;
+        justify-content: space-around;
+      }
+      .name {
+        margin-top: 40px;
+      }
+      .text {
+        align-self: center;
+        margin-left: 10px;
+        padding: 40px;
+        color: aliceblue;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+      }
+      .text .para {
+        width: 70vw;
+        font-weight: 50;
+      } 
+      .text-deco{
+        font-weight: bold;
+        font-size: xx-large;
+        width: fit-content;
+      }
+      .para{
+        display: flex;
+        font-size: xx-large;
+        height: 10px;
+      }
+      h2 {
         margin-top: 40px;
         text-align: center;
-       }
-      .deco{
+      }
+      .deco {
         background-color: rgb(114, 111, 106);
         height: 20px;
         margin-top: 0px;
         width: 100px;
         align-self: flex-end;
       }
-      .deco1{
+      .deco1 {
         background-color: rgb(114, 111, 106);
         height: 100px;
         width: 20px;
+        margin: right 20px;
         align-self: flex-end;
       }
-      .deco2{
+      .deco2 {
         background-color: rgb(114, 111, 106);
         height: 20px;
         width: 100px;
         margin-left: 0px;
+        align-self: flex-start;
       }
-      .deco3{
+      .deco3 {
         background-color: rgb(114, 111, 106);
         height: 100px;
         width: 20px;
-        margin-bottom: 60px;
-      }
-      h1{
         margin-bottom: 20px;
+        align-self: flex-start;
+      }
+      h1 {
+        margin-bottom: 20px;
+        margin-left: 50px;
+      }
+      h6{
         margin-left: 20px;
       }
-      p{
-        font-weight: 400;
-        font-size: large;
-        font-weight: bolder;
-        margin-left: 20px;
+      p {
+        margin-left: 50px;
       }
-      a{
+      a {
         text-decoration: none;
         color: inherit;
       }
-      /* @media (max-width:400px) {
-        /* .contact{
-          order: -1;
-          margin-left: 7px;
-        }
-        .contact button{
-          margin-right: 4px;
-        } */
-        /* .text{
-          margin-right: 10px;
-        } */
-        /* .flex-container{
-          flex-direction: column;
-          justify-content: center;
-        } */
+      .button-about{
+        margin-top: 95px;
+        align-self: center;
+        gap: 15px;
+        margin-bottom: 15px;
+      }
+      .second{
+        background-color: rgb(1, 26, 21);
+      }
+      .third{
+        background-color: rgb(1, 26, 21);
+      }
       .form-inline {
-	display: inline-block;
-}
-.navbar-header.col {
-	padding: 0 !important;
-}	
-.navbar {		
-	background: transparent;
-	padding-left: 16px;
-	padding-right: 16px;
-	box-shadow: 0 0 4px rgba(0,0,0,.1);
-}
-.nav-link {
-	margin: 0 5px;
-}
-.nav-link img {
-	border-radius: 50%;
-	width: 36px;
-	height: 36px;
-	margin: -8px 0;
-	float: left;
-	margin-right: 10px;
-}
-.navbar .navbar-brand {
-	color: #060606;
-	padding-left: 0;
-	font-size: 25px;
-	padding-right: 50px;
-	font-family: 'Raleway', sans-serif;
-  font-weight: bolder;
-}
-.navbar .navbar-brand b {
-	font-weight: bold;
-	color: white;
-}
-.navbar .navbar-nav a:hover, .navbar .navbar-nav a:focus {
-	color: white !important;
-}
-.navbar .navbar-nav a.active, .navbar .navbar-nav a.active:hover {
-	color: white !important;
-	background: transparent !important;
-}
-.search-box {
-	position: relative;
-}	
-.search-box input.form-control {		
-	padding-right: 35px;
-	border-radius: 0;
-	padding-left: 0;
-	border-width: 0 0 1px 0;
-	box-shadow: none;
-}
-.search-box input.form-control:focus {		
-	border-color: #f08373;		
-}
-.search-box .input-group-text {
-	min-width: 35px;
-	border: none;
-	background: transparent;
-	position: absolute;
-	right: 0;
-	z-index: 9;
-	padding: 7px 0 7px 7px;
-	height: 100%;
-}
-.search-box i {
-	color: #a0a5b1;
-	font-size: 19px;
-}
-.navbar .nav-item i {
-	font-size: 30px;
-}
-.navbar .dropdown-item i {
-	font-size: 16px;
-	min-width: 22px;
-}
-.navbar .nav-item.show > a {
-	background: none !important;
-}
-.navbar .dropdown-menu {
-	border-radius: 1px;
-	border-color: #e5e5e5;
-	box-shadow: 0 2px 8px rgba(0,0,0,.05);
-}
-.navbar .dropdown-menu a {
-	color: #777;
-	padding: 8px 20px;
-	line-height: normal;
-	font-size: 15px;
-}
-.navbar .navbar-form {
-	margin-right: 0;
-	margin-left: 0;
-	border: 0;
-}
-
-@media (min-width: 992px){
-	.form-inline .input-group {
-		width: 250px;
-		margin-right: 30px;
-	}
-}
-@media (max-width: 991px){
-	.form-inline {
-		display: block;
-		margin-bottom: 10px;
-		margin-top: 0;
-	}
-	.input-group {
-		width: 100%;
-	}
-  .contact{
-    gap: 50px;
-    justify-content: center;
-  }
-}
-.navbar-nav .nav-item{
-  font-size: 26px;
-}
-.contact{
-  display: flex;
-  justify-content: center;
-}
-
-
-
-    </style>  
-</head>
+        display: inline-block;
+      }
+      .navbar-header.col {
+        padding: 0 !important;
+      }
+      .navbar {
+        background: transparent;
+        padding-left: 16px;
+        padding-right: 16px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+      }
+      .nav-link {
+        margin: 0 5px;
+      }
+      .nav-link img {
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        margin: -8px 0;
+        float: left;
+        margin-right: 10px;
+      }
+      .navbar .navbar-brand {
+        color: #060606;
+        padding-left: 0;
+        font-size: 25px;
+        padding-right: 50px;
+        font-family: "Raleway", sans-serif;
+        font-weight: bolder;
+      }
+      .navbar .navbar-brand b {
+        font-weight: bold;
+        color: white;
+      }
+      .navbar .navbar-nav a:hover,
+      .navbar .navbar-nav a:focus {
+        color: white !important;
+      }
+      .navbar .navbar-nav a.active,
+      .navbar .navbar-nav a.active:hover {
+        color: white !important;
+        background: transparent !important;
+      }
+      .search-box {
+        position: relative;
+      }
+      .search-box input.form-control {
+        padding-right: 35px;
+        border-radius: 0;
+        padding-left: 0;
+        border-width: 0 0 1px 0;
+        box-shadow: none;
+      }
+      .search-box input.form-control:focus {
+        border-color: #f08373;
+      }
+      .search-box .input-group-text {
+        min-width: 35px;
+        border: none;
+        background: transparent;
+        position: absolute;
+        right: 0;
+        z-index: 9;
+        padding: 7px 0 7px 7px;
+        height: 100%;
+      }
+      .search-box i {
+        color: #a0a5b1;
+        font-size: 19px;
+      }
+      .navbar .nav-item i {
+        font-size: 30px;
+      }
+      .navbar .dropdown-item i {
+        font-size: 16px;
+        min-width: 22px;
+      }
+      .navbar .nav-item.show > a {
+        background: none !important;
+      }
+      .navbar .dropdown-menu {
+        border-radius: 1px;
+        border-color: #e5e5e5;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+      .navbar .dropdown-menu a {
+        color: #777;
+        padding: 8px 20px;
+        line-height: normal;
+        font-size: 15px;
+      }
+      .navbar .navbar-form {
+        margin-right: 0;
+        margin-left: 0;
+        border: 0;
+      }
+      @media (min-width: 992px) {
+        .form-inline .input-group {
+          width: 250px;
+          margin-right: 30px;
+        }
+      }
+      @media (max-width: 991px) {
+        .form-inline {
+          display: block;
+          margin-bottom: 10px;
+          margin-top: 0;
+        }
+        .input-group {
+          width: 100%;
+        }
+        .contact {
+          gap: 50px;
+          justify-content: center;
+        }
+      }
+      .navbar-nav .nav-item {
+        font-size: 26px;
+      }
+      .contact {
+        display: flex;
+        justify-content: center;
+      }
+      .fs-5{
+        color: #a0a5b1;
+      }
+      .pb-2{
+        color: aliceblue;
+      }
+      .third .Features-text{
+        color: #1d6145;
+      }
+      hr{
+        margin-top: -1em;
+      }
+      .foot{
+        background-color: rgb(1, 26, 21);
+        color:aliceblue ;
+        padding: 10px;
+        display:flex;
+      }
+      .foot-icon{
+        display: flex;
+        width: 90vw;
+        justify-content: flex-end;
+      }
+      .foot-icon a{
+        margin-right: 20px;
+      }
+     .foot-mail{
+      width: inherit;
+      justify-content: center;
+      border: none;
+     }
+     .icon-boundary{
+      display: flex;
+      height: 25px;
+      width: 25px;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      border:1.7px aliceblue solid;
+     }
+     .icon-boundary:hover{
+      background-color: #faf7f7;
+     }
+    </style>
+  </head>
   <body>
+    
+  <div class="first">
     <nav class="navbar navbar-expand-lg navbar-light">
-       <a class="navbar-brand" href="#">Port<b>FOLIO.</b></a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <a class="navbar-brand" href="#">Pradipto<b>FOLIO.</b></a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <!-- Collection of nav links, forms, and other content for toggling -->
-      <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+      <div
+        id="navbarCollapse"
+        class="collapse navbar-collapse justify-content-start"
+      >
         <div class="navbar-nav">
-          <a href="./index.html" class="nav-item nav-link">Home</a>
-          <a href="./project.html" class="nav-item nav-link" >Projects</a>
-          <a href="./file_resume/NIT_Silchar_Resume (1).pdf" class="nav-item nav-link" target="_blank">Resume</a>			
-           <div class="nav-item dropdown">
-            <!-- <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Services</a> --> 
-             <div class="dropdown-menu">					
+          <a href="./index.html" class="nav-item nav-link" >Home</a>
+          <a href="./project.html" class="nav-item nav-link">Projects</a>
+          <!-- <a
+            href="./file_resume/NIT_Silchar_Resume (1).pdf"
+            class="nav-item nav-link"
+            target="_blank"
+            >Resume</a
+          > -->
+          <div class="nav-item dropdown">
+            <!-- <a href="#" class="nav-item nav-link dropdown-toggle" data-toggle="dropdown">Services</a> -->
+            <div class="dropdown-menu">
               <!-- <a href="#" class="dropdown-item">Web Design</a>
               <a href="#" class="dropdown-item">Web Development</a>
               <a href="#" class="dropdown-item">Graphic Design</a>
               <a href="#" class="dropdown-item">Digital Marketing</a> -->
-                    </div>
-               </div>
+            </div>
+          </div>
           <!-- <a href="#" class="nav-item nav-link">Portfolio</a>
           <a href="#" class="nav-item nav-link active">Blog</a>
           <a href="#" class="nav-item nav-link">Contact</a> -->
-            </div> 
+        </div>
         <div class="navbar-nav ml-auto">
           <div class="navbar-form-wrapper">
-              <!-- <div class="input-group search-box">								
+            <!-- <div class="input-group search-box">								
                 <div class="input-group-append">
                   <span class="input-group-text">
                     <i class="material-icons">&#xE8B6;</i>
@@ -261,39 +347,266 @@
                 </div>
               </div>
                     </form> -->
-                </div>
+          </div>
           <div class="contact">
-          <a href="https://github.com/Pradipto02" class="nav-item nav-link" target="_blank"><i class="fa fa-github"></i></a>
-          <a href="http://www.linkedin.com/in/pradipto-shivam-ba19ba243" class="nav-item nav-link" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a href="mailto:pradiptoshivam@gmail.com" class="nav-item nav-link" target="_blank"><i class="fa fa-google"></i></a>
+            <a
+              href="https://github.com/Pradipto02"
+              class="nav-item nav-link"
+              target="_blank"
+              ><i class="fa fa-github"></i
+            ></a>
+            <a
+              href="http://www.linkedin.com/in/pradipto-shivam-ba19ba243"
+              class="nav-item nav-link"
+              target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <!-- <a
+              href="mailto:pradiptoshivam@gmail.com"
+              class="nav-item nav-link"
+              target="_blank"
+              ><i class="fa fa-google"></i
+            ></a> -->
+          </div>
         </div>
-        </div>    
-        </div>		
-      
+      </div>
     </nav>
-      <div class="flex-container">
-        <div class="text">
-          <div class="deco2"></div>
-          <div class="deco3"></div>
-          <h1>Hello,Welcome,my name is Pradipto Shivam</h1>
-          <p><span>I am a student</span>  pursuing a Bachelor's Degree in Electronics and Communication Engineering (ECE) </p>
-            <p><span>Domain of interest</span> include Website Designing and Machine Learning<br><span>Hobbies</span> include playing sports,listening to music and watching movies</p><br>
 
-           <div class="deco1"></div>
-            <div class="deco"></div>
+    <div class="flex-container">
+      <div class="text">
+        <div class="deco2"></div>
+        <div class="deco3"></div>
+        <h1>Hello,my name is Pradipto Shivam</h1>
+        <!-- <p>
+          <span>I am a student</span> pursuing a Bachelor's Degree in
+          Electronics and Communication Engineering (ECE)
+        </p> -->
+        <p>I like building tech related things and exploring new stuffs</p>
+        <p>My Domain of Interest are:</p>
+        <div class="para">
+          <div class="type-js"></div>
+          <!-- <br /><span>Hobbies</span> include playing sports,listening to
+          music and watching movies -->
         </div>
-        <!-- <div class="contact">
+        
+        <div class="button-about">
+          <button type="button" class="btn btn-outline-light" >More About Me</button>
+        </div>
+
+        <div class="deco1"></div>
+        <div class="deco"></div>
+      </div>
+      <!-- <div class="contact">
           <button type="button" class="btn btn-outline-light" ><a href="mailto:pradiptoshivam@gmail.com" target="_blank">Gmail</a></button>
           <button type="button" class="btn btn-outline-light" ><a href="http://www.linkedin.com/in/pradipto-shivam-ba19ba243" target="_blank">Linked In</a></button>
           <button type="button" class="btn btn-outline-light" ><a href="https://www.facebook.com/profile.php?id=100077262802575&mibextid=ZbWKwL" target="_blank">Facebook</a></button>
           <button type="button" class="btn btn-outline-light" ><a href="https://github.com/Pradipto02" target="_blank">Github</a></button>
         </div>  -->
+    </div>
+  </div>
+  <div class="second" >
+    <div class="py-5">
+      <h1 class="display-5 fw-bold text-white">About Me</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-5 mb-4" >I am a student pursuing a Bachelor's Degree in
+          Electronics and Communication Engineering (ECE).
+          I am an enthusiast UI/UX Developer.<br>
+          Hobbies include playing sports,listening to
+          music and watching movies</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold" fdprocessedid="6be5zc">Contact Me</button>
+          <button type="button" class="btn btn-outline-light btn-lg px-4" fdprocessedid="ksl7q4" href="./file_resume/NIT_Silchar_Resume (1).pdf" >Download Resume</button>
+        </div>
       </div>
+    </div>
+  </div>
+  <div class="third">
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 border-bottom">Skills and Technologies I'm used to</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="feature col">
+          <div class="feature-icon  bg-gradient">
+            <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+            width="em" height="5em" viewBox="0 0 419.931 419.931"
+            xml:space="preserve">
+         <g>
+           <g>
+             <g>
+               <path d="M282.895,352.367c-2.176-1.324-4.072-3.099-5.579-5.25c-0.696-0.992-1.284-2.041-1.771-3.125H28.282V100.276h335.624
+                 v159.138c7.165,0.647,13.177,5.353,15.701,11.797c2.235-1.225,4.726-1.982,7.344-2.213c1.771-0.154,3.53-0.044,5.236,0.293
+                 V39.561c0-12.996-10.571-23.569-23.566-23.569H23.568C10.573,15.992,0,26.565,0,39.561v309.146
+                 c0,12.996,10.573,23.568,23.568,23.568h257.179c-2.007-4.064-2.483-8.652-1.302-13.066
+                 C280.126,356.67,281.304,354.354,282.895,352.367z M338.025,55.569c0-4.806,3.896-8.703,8.702-8.703h8.702
+                 c4.807,0,8.702,3.896,8.702,8.703v9.863c0,4.806-3.896,8.702-8.702,8.702h-8.702c-4.807,0-8.702-3.896-8.702-8.702V55.569z
+                  M297.56,55.569c0-4.806,3.896-8.703,8.702-8.703h8.703c4.807,0,8.702,3.896,8.702,8.703v9.863c0,4.806-3.896,8.702-8.702,8.702
+                 h-8.703c-4.806,0-8.702-3.896-8.702-8.702V55.569z M257.094,55.569c0-4.806,3.897-8.703,8.702-8.703h8.702
+                 c4.807,0,8.703,3.896,8.703,8.703v9.863c0,4.806-3.896,8.702-8.703,8.702h-8.702c-4.805,0-8.702-3.896-8.702-8.702V55.569z"/>
+               <path d="M419.875,335.77l-2.615-14.83c-0.353-1.997-2.256-3.331-4.255-2.979l-13.188,2.324c-1.583-3.715-3.605-7.195-6.005-10.38
+                 l8.614-10.268c0.626-0.744,0.931-1.709,0.847-2.68c-0.086-0.971-0.554-1.867-1.3-2.494l-11.534-9.68
+                 c-0.746-0.626-1.713-0.93-2.683-0.845c-0.971,0.085-1.867,0.552-2.493,1.298l-8.606,10.26c-3.533-1.8-7.312-3.188-11.271-4.104
+                 v-13.392c0-2.028-1.645-3.674-3.673-3.674h-15.06c-2.027,0-3.673,1.646-3.673,3.674v13.392
+                 c-3.961,0.915-7.736,2.304-11.271,4.104l-8.608-10.259c-1.304-1.554-3.62-1.756-5.175-0.453l-11.535,9.679
+                 c-0.746,0.627-1.213,1.523-1.299,2.494c-0.084,0.971,0.22,1.937,0.846,2.683l8.615,10.266c-2.396,3.184-4.422,6.666-6.005,10.38
+                 l-13.188-2.325c-1.994-0.351-3.901,0.982-4.255,2.979l-2.614,14.83c-0.169,0.959,0.05,1.945,0.607,2.744
+                 c0.561,0.799,1.41,1.342,2.37,1.511l13.198,2.326c0.215,4.089,0.927,8.045,2.073,11.812l-11.6,6.695
+                 c-0.844,0.485-1.459,1.289-1.712,2.229c-0.252,0.941-0.119,1.943,0.367,2.787l7.529,13.041c0.485,0.844,1.289,1.459,2.229,1.711
+                 c0.313,0.084,0.632,0.125,0.951,0.125c0.639,0,1.272-0.166,1.836-0.492l11.609-6.703c2.73,2.925,5.812,5.517,9.18,7.709
+                 l-4.584,12.593c-0.332,0.916-0.289,1.926,0.123,2.809s1.157,1.566,2.072,1.898l14.148,5.149c0.406,0.148,0.832,0.224,1.257,0.224
+                 c0.53,0,1.063-0.115,1.554-0.345c0.883-0.411,1.564-1.157,1.897-2.073l4.583-12.593c1.965,0.238,3.965,0.361,5.994,0.361
+                 s4.029-0.125,5.994-0.361l4.584,12.593c0.332,0.916,1.016,1.662,1.897,2.073c0.49,0.229,1.021,0.345,1.554,0.345
+                 c0.424,0,0.85-0.074,1.256-0.224l14.15-5.149c0.913-0.332,1.659-1.017,2.07-1.898c0.412-0.883,0.456-1.893,0.123-2.809
+                 l-4.584-12.591c3.365-2.192,6.447-4.786,9.18-7.709l11.609,6.703c0.563,0.324,1.197,0.492,1.836,0.492
+                 c0.318,0,0.64-0.043,0.951-0.125c0.941-0.252,1.743-0.869,2.229-1.711l7.529-13.043c0.486-0.842,0.619-1.846,0.367-2.787
+                 c-0.253-0.938-0.868-1.742-1.712-2.229l-11.598-6.693c1.146-3.768,1.856-7.724,2.071-11.812l13.198-2.327
+                 c0.96-0.169,1.812-0.712,2.37-1.511C419.825,337.715,420.044,336.729,419.875,335.77z M354.184,359.336
+                 c-11.155,0-20.2-9.045-20.2-20.201s9.046-20.2,20.2-20.2c11.156,0,20.201,9.044,20.201,20.2S365.34,359.336,354.184,359.336z"/>
+               <g>
+                 <path d="M164.695,235.373c0-4.752-2.785-9.117-7.096-11.119l-39.455-18.332l39.456-18.334c4.31-2.004,7.095-6.368,7.095-11.118
+                   v-0.319c0-4.21-2.119-8.075-5.665-10.334c-1.962-1.253-4.247-1.916-6.606-1.916c-1.778,0-3.563,0.391-5.16,1.133l-63.078,29.333
+                   c-4.309,2.004-7.092,6.368-7.092,11.117v0.877c0,4.743,2.782,9.104,7.093,11.118l63.084,29.336
+                   c1.631,0.755,3.368,1.138,5.162,1.138c2.338,0,4.616-0.664,6.597-1.924c3.548-2.268,5.666-6.13,5.666-10.335L164.695,235.373
+                   L164.695,235.373z"/>
+                 <path d="M226.932,134.012c-2.301-3.15-6.002-5.03-9.901-5.03h-0.314c-5.354,0-10.048,3.425-11.679,8.516L163.478,266.27
+                   c-1.183,3.718-0.517,7.813,1.781,10.962c2.301,3.148,6.002,5.029,9.901,5.029h0.315c5.352,0,10.043-3.426,11.672-8.516
+                   l41.555-128.762C229.896,141.268,229.234,137.167,226.932,134.012z"/>
+                 <path d="M308.001,194.366l-63.079-29.333c-1.592-0.74-3.374-1.131-5.152-1.131c-2.358,0-4.644,0.661-6.605,1.912
+                   c-3.552,2.263-5.671,6.127-5.671,10.337v0.319c0,4.746,2.783,9.111,7.097,11.123l39.454,18.33l-39.455,18.331
+                   c-4.311,2.002-7.096,6.367-7.096,11.119v0.321c0,4.205,2.119,8.066,5.669,10.336c1.974,1.258,4.254,1.923,6.595,1.923
+                   c1.792,0,3.527-0.383,5.169-1.141l63.082-29.336c4.307-2.009,7.088-6.371,7.088-11.114v-0.877
+                   C315.094,200.735,312.311,196.371,308.001,194.366z"/>
+               </g>
+             </g>
+           </g>
+         </g>
+         </svg> 
+          </div>
+          <h2 class="Features-text">Web Development Tools</h2>
+          <p class="fs-5">HTML, CSS, Javascript, Bootstrap, JQuery, Type.js, Node.js, Express.js, React.js.</p>
+        </div>
+        <div class="feature col">
+          <div class="feature-icon  bg-gradient">
+            <svg fill="#000000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 32 32" xml:space="preserve" height="5em" width="em">
+     <path id="machine--learning--01_1_" d="M12,1.64c-0.002,0-0.004,0-0.006,0c-1.473,0-2.691,0.759-3.239,2h-0.48
+	c-0.003,0-0.006,0-0.009,0c-1.271,0-2.478,0.425-3.398,1.199C3.892,5.659,3.354,6.79,3.352,8.021
+	c-0.001,0.995,0.526,2.097,1.025,2.791c-2.223,0.77-3.734,2.633-3.737,4.688c-0.003,2.046,1.507,3.91,3.734,4.687
+	c-0.506,0.692-1.044,1.788-1.045,2.766c-0.003,2.426,2.215,4.403,4.947,4.408h0.48c0.543,1.238,1.764,1.998,3.244,2
+	c0.002,0,0.004,0,0.007,0c1.972,0,3.351-1.381,3.354-3.36V5C15.363,3.025,13.982,1.643,12,1.64z M12,18.64
+	c-0.353,0-0.64-0.287-0.64-0.64s0.287-0.64,0.64-0.64s0.64,0.287,0.64,0.64S12.353,18.64,12,18.64z M14.64,13.64h-2.28V7.305
+	c0.575-0.159,1-0.681,1-1.305c0-0.75-0.61-1.36-1.36-1.36S10.64,5.25,10.64,6c0,0.625,0.425,1.146,1,1.305v6.335H10
+	c-0.001,0-0.001,0-0.002,0C9.2,13.64,8.641,14.199,8.64,15v0.64H6.305c-0.159-0.575-0.681-1-1.305-1c-0.75,0-1.36,0.61-1.36,1.36
+	S4.25,17.36,5,17.36c0.625,0,1.147-0.426,1.305-1H8.64v5.834c-0.575,0.159-1,0.681-1,1.306c0,0.75,0.61,1.36,1.36,1.36
+	s1.36-0.61,1.36-1.36c0-0.625-0.425-1.147-1-1.306V15c0.001-0.401,0.239-0.641,0.639-0.641H10h4.64v11.639
+	c-0.003,1.456-0.908,2.46-2.28,2.61v-9.303c0.575-0.159,1-0.681,1-1.306c0-0.75-0.61-1.36-1.36-1.36s-1.36,0.61-1.36,1.36
+	c0,0.625,0.425,1.147,1,1.306v9.31c-1.103-0.114-1.951-0.742-2.3-1.735C9.289,26.736,9.153,26.64,9,26.64H8.276
+	c-2.036-0.003-4.23-1.413-4.228-3.686c0.002-0.966,0.714-2.209,1.206-2.699c0.092-0.091,0.127-0.225,0.093-0.35
+	s-0.132-0.222-0.257-0.254c-2.199-0.566-3.733-2.273-3.73-4.151c0.003-1.876,1.522-3.573,3.695-4.141h2.64
+	c0.159,0.575,0.681,1,1.305,1c0.75,0,1.36-0.61,1.36-1.36S9.75,9.64,9,9.64c-0.625,0-1.146,0.425-1.305,1H5.162
+	C4.685,10.099,4.07,8.949,4.071,8.022C4.073,7.006,4.52,6.072,5.332,5.39c0.779-0.655,1.849-1.03,2.936-1.03
+	c0.002,0,0.005,0,0.008,0H9c0.152,0,0.288-0.096,0.339-0.239c0.392-1.103,1.384-1.761,2.655-1.761c0.002,0,0.003,0,0.005,0
+	C13.582,2.363,14.643,3.423,14.64,5V13.64z M12,6.64c-0.353,0-0.64-0.287-0.64-0.64S11.647,5.36,12,5.36S12.64,5.647,12.64,6
+	S12.353,6.64,12,6.64z M9,22.86c0.353,0,0.64,0.287,0.64,0.64S9.353,24.14,9,24.14s-0.64-0.287-0.64-0.64S8.647,22.86,9,22.86z
+	 M5.64,16c0,0.353-0.287,0.64-0.64,0.64S4.36,16.353,4.36,16S4.647,15.36,5,15.36S5.64,15.647,5.64,16z M8.36,11
+	c0-0.353,0.287-0.64,0.64-0.64S9.64,10.647,9.64,11S9.353,11.64,9,11.64S8.36,11.353,8.36,11z M31.36,15.5
+	c0.002-2.046-1.508-3.909-3.734-4.687c0.507-0.692,1.044-1.788,1.046-2.767c0.002-1.231-0.54-2.365-1.526-3.193
+	c-0.917-0.77-2.163-1.212-3.421-1.214h-0.48c-0.544-1.238-1.764-1.998-3.243-2c-0.003,0-0.005,0-0.008,0
+	c-0.972,0-1.808,0.323-2.418,0.933C16.965,3.185,16.642,4.023,16.64,5v20.999c-0.003,1.976,1.378,3.357,3.359,3.361
+	c0.003,0,0.005,0,0.007,0c1.473,0,2.69-0.76,3.238-2h0.479c0.004,0,0.007,0,0.01,0c1.271,0,2.478-0.426,3.398-1.199
+	c0.977-0.82,1.515-1.95,1.517-3.182c0.001-0.995-0.526-2.098-1.025-2.791C29.847,19.418,31.357,17.555,31.36,15.5z M20,12.36
+	c0.353,0,0.64,0.287,0.64,0.64s-0.287,0.64-0.64,0.64s-0.64-0.287-0.64-0.64S19.647,12.36,20,12.36z M26.946,19.64h-2.641
+	c-0.159-0.575-0.681-1-1.306-1c-0.75,0-1.36,0.61-1.36,1.36s0.61,1.36,1.36,1.36c0.624,0,1.147-0.425,1.306-1h2.533
+	c0.476,0.541,1.091,1.691,1.089,2.618c-0.001,1.016-0.448,1.95-1.26,2.631c-0.781,0.657-1.865,1.01-2.943,1.03H23
+	c-0.152,0-0.288,0.097-0.339,0.239c-0.393,1.104-1.385,1.761-2.655,1.761c-0.002,0-0.004,0-0.005,0
+	c-0.781-0.001-1.445-0.252-1.919-0.725C17.608,27.441,17.358,26.78,17.36,26v-8.64h2.279v6.334c-0.575,0.159-1,0.681-1,1.306
+	c0,0.75,0.61,1.36,1.36,1.36s1.36-0.61,1.36-1.36c0-0.624-0.425-1.147-1-1.306V17.36h1.639c0.001,0,0.002,0,0.003,0
+	c0.799,0,1.356-0.559,1.358-1.36v-0.64h2.334c0.159,0.575,0.681,1,1.306,1c0.75,0,1.36-0.61,1.36-1.36s-0.61-1.36-1.36-1.36
+	c-0.625,0-1.147,0.425-1.306,1H23.36V8.805c0.575-0.159,1-0.681,1-1.305c0-0.75-0.61-1.36-1.36-1.36s-1.36,0.61-1.36,1.36
+	c0,0.624,0.425,1.146,1,1.305V16c0,0.401-0.238,0.641-0.638,0.641c-0.001,0-0.001,0-0.002,0h-4.64V5
+	c0.001-0.781,0.252-1.445,0.725-1.918c0.397-0.398,0.933-0.627,1.555-0.693v9.305c-0.575,0.159-1,0.681-1,1.305
+	c0,0.75,0.61,1.36,1.36,1.36s1.36-0.61,1.36-1.36c0-0.624-0.425-1.146-1-1.305v-9.31c1.103,0.115,1.951,0.742,2.3,1.736
+	c0.051,0.144,0.188,0.24,0.34,0.24h0.724c1.092,0.001,2.17,0.383,2.959,1.045c0.82,0.689,1.271,1.626,1.269,2.641
+	c-0.001,0.966-0.714,2.209-1.205,2.699c-0.092,0.091-0.127,0.225-0.094,0.35c0.034,0.125,0.133,0.222,0.258,0.254
+	c2.198,0.567,3.732,2.274,3.729,4.151C30.638,17.374,29.12,19.07,26.946,19.64z M23.64,20c0,0.353-0.287,0.64-0.64,0.64
+	s-0.64-0.287-0.64-0.64s0.287-0.64,0.64-0.64S23.64,19.647,23.64,20z M20,24.36c0.353,0,0.64,0.287,0.64,0.64s-0.287,0.64-0.64,0.64
+	s-0.64-0.287-0.64-0.64S19.647,24.36,20,24.36z M23,8.14c-0.353,0-0.64-0.287-0.64-0.64S22.647,6.86,23,6.86s0.64,0.287,0.64,0.64
+	S23.353,8.14,23,8.14z M26.36,15c0-0.353,0.287-0.64,0.64-0.64s0.64,0.287,0.64,0.64s-0.287,0.64-0.64,0.64S26.36,15.353,26.36,15z"
+	/>
+<rect id="_Transparent_Rectangle" style="fill:none;" width="32" height="32"/>
+</svg>
+          </div>
+          <h2 class="Features-text">Machine and Deep Learning Tools</h2>
+          <p class="fs-5">Pandas, Numpy, Matplotlib.pyplot, Seaborn, Lightbgm Learn, Scikit-Learn, TensorFlow, Keras, Pytorch.</p>
+          
+        </div>
+        <div class="feature col">
+          <div class="feature-icon  bg-gradient">
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="em" height="5em" viewBox="0 0 1280.000000 1105.000000"
+ preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by potrace 1.15, written by Peter Selinger 2001-2017
+</metadata>
+<g transform="translate(0.000000,1105.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M5580 11040 c-405 -50 -795 -219 -1140 -496 -117 -95 -299 -280 -397
+-406 -348 -445 -502 -947 -472 -1535 29 -562 256 -1081 654 -1492 585 -604
+1421 -842 2240 -636 906 227 1586 979 1732 1915 21 141 25 499 5 635 -112 781
+-578 1421 -1287 1765 -251 123 -467 190 -739 231 -150 23 -479 33 -596 19z"/>
+<path d="M3353 7855 c-180 -37 -319 -82 -449 -145 -227 -110 -370 -243 -580
+-540 -510 -721 -905 -1374 -1258 -2080 -446 -895 -739 -1713 -910 -2545 -110
+-538 -150 -924 -150 -1475 0 -385 4 -478 44 -863 11 -104 20 -192 20 -198 0
+-5 707 -9 1875 -9 l1875 0 0 24 c0 14 -16 137 -34 273 -46 326 -73 578 -86
+793 -12 186 -12 188 26 495 13 110 35 320 49 468 40 426 64 570 131 802 95
+323 291 710 597 1178 60 92 112 167 116 167 3 0 21 -39 40 -88 124 -316 311
+-647 481 -847 177 -208 400 -375 647 -484 88 -38 674 -230 868 -284 395 -110
+773 -159 1490 -192 182 -8 427 -22 545 -31 238 -18 462 -14 546 9 69 19 150
+64 180 100 69 82 107 218 119 424 18 303 -56 369 -455 403 -135 11 -945 117
+-1265 165 -604 90 -1162 219 -1392 321 -221 97 -564 737 -886 1653 l-51 146
+-1 225 c-1 250 -11 302 -76 405 -36 57 -45 65 -78 65 -37 0 -245 49 -330 77
+-172 57 -434 212 -720 426 -392 292 -575 557 -773 1116 -13 36 -27 66 -33 67
+-5 1 -60 -8 -122 -21z"/>
+<path d="M11952 4903 c-55 -93 -177 -301 -272 -463 -95 -162 -349 -592 -565
+-955 -466 -783 -667 -1125 -880 -1493 -114 -199 -167 -280 -193 -300 l-35 -27
+-1889 -3 -1888 -2 0 -295 0 -295 2055 0 c2256 0 2090 -5 2151 61 17 19 197
+322 399 674 203 352 661 1149 1020 1770 733 1271 727 1261 711 1274 -25 20
+-109 57 -244 108 -79 29 -170 67 -203 83 -32 17 -60 30 -63 30 -3 0 -49 -75
+-104 -167z"/>
+<path d="M4984 869 c-18 -20 -19 -43 -22 -363 -2 -187 0 -378 3 -423 l7 -83
+3914 0 3914 0 0 445 0 445 -3898 0 -3899 0 -19 -21z"/>
+</g>
+</svg>
 
-
+          </div>
+          <h2 class="Features-text">Coding</h2>
+          <p class="fs-5">Languages: C, C++, Python, Javascript.<br></p>
+          <p class="fs-5">Data Structures & Algorithms, Object-Oriented Programming, Dynamic Programming(Beginner).</p>
+          <hr>
+        </div>
+      </div>
+    </div>
+    </div>
+  <hr/>
+    <footer class="foot">
+      <h11 id="foot-p" margin-right: 10px>pradiptoshivam5317@gmail</h11>
+        <div class="foot-icon">
+          <a href="https://www.instagram.com/pradiptoshivam/" target="_blank"><div class="icon-boundary"><i class="fa fa-instagram"></i></div></a>
+          <a href="https://www.facebook.com/profile.php?id=100077262802575&mibextid=ZbWKwL" target="_blank"><div class="icon-boundary"><i class="fa fa-facebook"></i></div></a>
+          <a href="https://twitter.com/abcd34586295297" target="_blank"><div class="icon-boundary"><i class="fa fa-twitter"></i></div></a>
+        </div>
+    </footer>
+    <div class="foot foot-mail" >
+     <h9 id="foot-p">Copyright: 2023<i class="fa fa-copyright"></i>PradiptoFolio</h9>
+    </div>
+  </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
